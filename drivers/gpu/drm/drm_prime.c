@@ -43,6 +43,8 @@
 #include <drm/drm_gem.h>
 #include <drm/drm_prime.h>
 
+#include <compat14.h>
+
 #include "drm_internal.h"
 
 /**

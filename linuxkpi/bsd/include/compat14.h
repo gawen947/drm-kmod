@@ -31,6 +31,13 @@
 #include <sys/priv.h>
 #include <sys/limits.h>
 
+/* linux_dma_(un)map_sg_attrs does not support attrs yet */
+#define dma_map_sg_attrs(dev, sgl, nents, dir, attrs) \
+  linux_dma_map_sg_attrs(dev, sgl, nents, dir, 0)
+
+#define dma_unmap_sg_attrs(dev, sg, nents, dir, attrs) \
+  linux_dma_unmap_sg_attrs(dev, sg, nents, dir, 0)
+
 static inline ssize_t
 strscpy(char* dst, const char* src, size_t len)
 {
