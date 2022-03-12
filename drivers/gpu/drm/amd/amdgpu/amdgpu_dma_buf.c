@@ -39,6 +39,8 @@
 #include <linux/dma-buf.h>
 #include <linux/dma-fence-array.h>
 
+#include <compat14.h>
+
 /**
  * amdgpu_gem_prime_vmap - &dma_buf_ops.vmap implementation
  * @obj: GEM BO
