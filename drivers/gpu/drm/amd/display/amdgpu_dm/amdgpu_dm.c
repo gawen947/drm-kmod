@@ -72,6 +72,8 @@
 #include <drm/drm_audio_component.h>
 #include <drm/drm_hdcp.h>
 
+#include <compat14.h>
+
 #if defined(CONFIG_DRM_AMD_DC_DCN1_0)
 #include "ivsrcid/dcn/irqsrcs_dcn_1_0.h"
 
