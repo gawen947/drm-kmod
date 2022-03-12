@@ -9,6 +9,15 @@
 
 #include_next <linux/pci.h>
 
+#define PCI_EXP_LNKCTL2_TLS             0x000f
+#define PCI_EXP_LNKCTL2_TLS_2_5GT       0x0001  /* Supported Speed 2.5GT/s */
+#define PCI_EXP_LNKCTL2_TLS_5_0GT       0x0002  /* Supported Speed 5GT/s */
+#define PCI_EXP_LNKCTL2_TLS_8_0GT       0x0003  /* Supported Speed 8GT/s */
+#define PCI_EXP_LNKCTL2_TLS_16_0GT      0x0004  /* Supported Speed 16GT/s */
+#define PCI_EXP_LNKCTL2_TLS_32_0GT      0x0005  /* Supported Speed 32GT/s */
+#define PCI_EXP_LNKCTL2_ENTER_COMP      0x0010  /* Enter Compliance */
+#define PCI_EXP_LNKCTL2_TX_MARGIN       0x0380  /* Transmit Margin */
+
 #define	DEFINE_RES_MEM(_start, _size)		\
 	{					\
 	 .bsd_res = NULL,			\
