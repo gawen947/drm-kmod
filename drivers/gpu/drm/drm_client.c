@@ -22,6 +22,8 @@
 #include <drm/drm_mode.h>
 #include <drm/drm_print.h>
 
+#include <compat14.h>
+
 #include "drm_crtc_internal.h"
 #include "drm_internal.h"
 
