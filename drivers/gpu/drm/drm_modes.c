@@ -43,6 +43,8 @@
 #include <drm/drm_modes.h>
 #include <drm/drm_print.h>
 
+#include <compat14.h>
+
 #include "drm_crtc_internal.h"
 
 /**
